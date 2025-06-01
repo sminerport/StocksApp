@@ -1,7 +1,6 @@
-﻿namespace StocksApp.ServiceContracts
+namespace StocksApp.ServiceContracts;
+
+public interface IFinnhubService
 {
-    public interface IFinnhubService
-    {
-        Task<Dictionary<string, object>?> GetStockDataAsync(string symbol);
-    }
+    Task<Dictionary<string, object>?> GetStockDataAsync(string symbol);
 }

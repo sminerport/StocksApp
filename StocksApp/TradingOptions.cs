@@ -1,7 +1,7 @@
-﻿namespace StocksApp
+namespace StocksApp;
+
+public class TradingOptions
 {
-    public class TradingOptions
-    {
-        public string? DefaultStockSymbol { get; set; }
-    }
+    public string? DefaultStockSymbol { get; set; }
 }
+

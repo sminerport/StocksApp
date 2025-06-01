@@ -1,11 +1,11 @@
-﻿using System.Text.Json;
+using System.Text.Json;
 
 using StocksApp.ServiceContracts;
 
-namespace StocksApp.Services
+namespace StocksApp.Services;
+
+public class FinnhubService : IFinnhubService
 {
-    public class FinnhubService : IFinnhubService
-    {
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IConfiguration _configuration;
 
@@ -45,4 +45,3 @@ namespace StocksApp.Services
             }
         }
     }
-}
